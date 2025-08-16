@@ -1,0 +1,6 @@
+FIRST_NAME_FIELD = "firstName"
+LAST_NAME_FIELD = "lastName"
+PASSWORD_FIELD = "password"
+BIRTHDAY_FIELD = "birthday"
+NO_RESULTS_TITLE = "Sorry for the inconvenience."
+NO_RESULTS_SUGGESTION = "Search again what you are looking for"

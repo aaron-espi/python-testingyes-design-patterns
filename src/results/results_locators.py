@@ -1,0 +1,7 @@
+RESULTS_PAGE_TITLE_TEXT = "js-product-list-header"
+RESULTS_PAGE_BREADCRUMB_NAVIGATION = "nav.breadcrumb"
+NO_RESULTS_TITLE_TEXT = "section.page-not-found > h4"
+NO_RESULTS_SUGGESTION_TEXT = "section.page-not-found > p"
+NO_RESULTS_SEARCH_INPUT = "div#search_widget input[name='s']"
+SORT_BY_LABEL = "span.sort-by"
+SORT_BY_DROPDOWN_MENU = "div.dropdown-menu"

@@ -1,0 +1,8 @@
+EMAIL_INPUT = "email"
+PASSWORD_INPUT = "password"
+PRODUCT_ITEMS = "article.product-miniature"
+PRODUCT_TITLE_TEXT = "h2.product-title"
+HEADER_SEARCH_INPUT = "s"
+HEADER_SEARCH_BUTTON = "//button[span[text()='Search']]"
+LOGGED_IN_USERNAME_TEXT = "a.account"
+LOGIN_LINK = "_desktop_user_info"

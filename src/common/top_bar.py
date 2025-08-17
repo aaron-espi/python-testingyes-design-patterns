@@ -13,7 +13,7 @@ class TopBar(AbstractComponent):
         return self.driver.find_element(By.ID, LOGIN_LINK)
 
     def _get_username_text(self):
-        return self.driver.find_element(By.ID, LOGGED_IN_USERNAME_TEXT)
+        return self.driver.find_element(By.CSS_SELECTOR, LOGGED_IN_USERNAME_TEXT)
 
     def go_to_login(self):
         self._get_login_link().click()

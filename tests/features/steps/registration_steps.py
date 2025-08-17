@@ -40,24 +40,22 @@ def navigate_to_registration_page(context):
 
 @when("the user fills in the form with the following data")
 def fill_form_with_data(context):
-    data = context.table.as_dicts()
-    row = data[0]
+    for row in context.table:
+        first_name = row[FIRST_NAME_FIELD]
+        last_name = row[LAST_NAME_FIELD]
+        birthday = row[BIRTHDAY_FIELD]
+        password = row[PASSWORD_FIELD]
 
-    first_name = row[FIRST_NAME_FIELD]
-    last_name = row[LAST_NAME_FIELD]
-    birthday = row[BIRTHDAY_FIELD]
-    password = row[PASSWORD_FIELD]
+        registration_page = context.registration_page
 
-    registration_page = context.registration_page
+        registration_page.registration_form.check_social_title_mr()
+        registration_page.registration_form.type_first_name(first_name)
+        registration_page.registration_form.type_last_name(last_name)
+        registration_page.registration_form.type_birthday(birthday)
+        registration_page.registration_form.type_password(password)
+        registration_page.registration_form.check_terms_and_privacy()
 
-    registration_page.registration_form.check_social_title_mr()
-    registration_page.registration_form.type_first_name(first_name)
-    registration_page.registration_form.type_last_name(last_name)
-    registration_page.registration_form.type_birthday(birthday)
-    registration_page.registration_form.type_password(password)
-    registration_page.registration_form.check_terms_and_privacy()
-
-    context.user = TestUser(first_name, last_name, None, password, birthday)
+        context.user = TestUser(first_name, last_name, None, password, birthday)
 
 
 @when("uses a unique email address")

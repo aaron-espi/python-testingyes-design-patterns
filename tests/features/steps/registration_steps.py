@@ -1,12 +1,12 @@
 from behave import when, then, given
-from core.driver_manager import DriverManager
+from tests.core.driver_manager import DriverManager
 from src.main.main_page import MainPage
 from src.login.login_page import LoginPage
 from src.registration.registration_page import RegistrationPage
-from utils.model.test_user import TestUser
-from utils.factory.email_factory import EmailFactory
-from constants.registration_constants import ALREADY_USED_EMAIL_ERROR
-from constants.search_constants import (
+from tests.utils.model.test_user import TestUser
+from tests.utils.factory.email_factory import EmailFactory
+from tests.constants.registration_constants import ALREADY_USED_EMAIL_ERROR
+from tests.constants.search_constants import (
     FIRST_NAME_FIELD,
     BIRTHDAY_FIELD,
     LAST_NAME_FIELD,

@@ -1,4 +1,4 @@
-from registration_form import RegistrationForm
+from src.registration.registration_form import RegistrationForm
 
 
 class RegistrationPage:

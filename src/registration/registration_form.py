@@ -1,6 +1,6 @@
-from common.abstract_component import AbstractComponent
-from common.common_locators import EMAIL_INPUT, PASSWORD_INPUT
-from registration_locators import (
+from src.common.abstract_component import AbstractComponent
+from src.common.common_locators import EMAIL_INPUT, PASSWORD_INPUT
+from src.registration.registration_locators import (
     BIRTHDAY_INPUT,
     ERROR_MESSAGE,
     FIRSTNAME_INPUT,

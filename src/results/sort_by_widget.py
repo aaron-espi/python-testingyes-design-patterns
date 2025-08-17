@@ -1,5 +1,5 @@
-from common.abstract_component import AbstractComponent
-from results_locators import SORT_BY_DROPDOWN_MENU, SORT_BY_LABEL
+from src.common.abstract_component import AbstractComponent
+from src.results.results_locators import SORT_BY_DROPDOWN_MENU, SORT_BY_LABEL
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
 

@@ -1,5 +1,5 @@
-from common.abstract_component import AbstractComponent
-from results_locators import (
+from src.common.abstract_component import AbstractComponent
+from src.results.results_locators import (
     NO_RESULTS_TITLE_TEXT,
     NO_RESULTS_SUGGESTION_TEXT,
     NO_RESULTS_SEARCH_INPUT,

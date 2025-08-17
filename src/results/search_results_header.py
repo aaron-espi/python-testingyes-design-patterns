@@ -1,5 +1,5 @@
-from common.abstract_component import AbstractComponent
-from results_locators import RESULTS_PAGE_BREADCRUMB_NAVIGATION, RESULTS_PAGE_TITLE_TEXT
+from src.common.abstract_component import AbstractComponent
+from src.results.results_locators import RESULTS_PAGE_BREADCRUMB_NAVIGATION, RESULTS_PAGE_TITLE_TEXT
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
 

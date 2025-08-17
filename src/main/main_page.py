@@ -1,7 +1,7 @@
-from common.top_bar import TopBar
-from common.search_widget import SearchWidget
-from common.product_grid import ProductGrid
-from config.environment_config import BASE_URL
+from src.common.top_bar import TopBar
+from src.common.search_widget import SearchWidget
+from src.common.product_grid import ProductGrid
+from src.config.environment_config import BASE_URL
 
 
 class MainPage:

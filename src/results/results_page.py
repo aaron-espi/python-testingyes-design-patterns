@@ -1,8 +1,8 @@
-from common.product_grid import ProductGrid
-from common.search_widget import SearchWidget
-from results.no_results_pannel import NoResultsPanel
-from results.sort_by_widget import SortByWidget
-from results.search_results_header import SearchResultsHeader
+from src.common.product_grid import ProductGrid
+from src.common.search_widget import SearchWidget
+from src.results.no_results_pannel import NoResultsPanel
+from src.results.sort_by_widget import SortByWidget
+from src.results.search_results_header import SearchResultsHeader
 
 
 class ResultsPage:

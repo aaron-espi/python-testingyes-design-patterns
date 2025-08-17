@@ -1,6 +1,6 @@
-from common.abstract_component import AbstractComponent
-from common.common_locators import EMAIL_INPUT, PASSWORD_INPUT
-from login_locators import LOGIN_BUTTON, REGISTER_LINK
+from src.common.abstract_component import AbstractComponent
+from src.common.common_locators import EMAIL_INPUT, PASSWORD_INPUT
+from src.login.login_locators import LOGIN_BUTTON, REGISTER_LINK
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
 

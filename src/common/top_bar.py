@@ -1,6 +1,6 @@
-from abstract_component import AbstractComponent
+from src.common.abstract_component import AbstractComponent
 from selenium.webdriver.common.by import By
-from common_locators import LOGIN_LINK, LOGGED_IN_USERNAME_TEXT
+from src.common.common_locators import LOGIN_LINK, LOGGED_IN_USERNAME_TEXT
 from selenium.common.exceptions import TimeoutException
 
 

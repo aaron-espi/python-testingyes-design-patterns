@@ -1,4 +1,4 @@
-from login_form import LoginForm
+from src.login.login_form import LoginForm
 
 
 class LoginPage:

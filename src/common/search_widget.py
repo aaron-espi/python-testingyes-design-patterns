@@ -1,6 +1,6 @@
-from abstract_component import AbstractComponent
+from src.common.abstract_component import AbstractComponent
 from selenium.webdriver.common.by import By
-from common_locators import HEADER_SEARCH_INPUT, HEADER_SEARCH_BUTTON
+from src.common.common_locators import HEADER_SEARCH_INPUT, HEADER_SEARCH_BUTTON
 from selenium.common.exceptions import TimeoutException
 
 

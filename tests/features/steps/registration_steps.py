@@ -16,6 +16,7 @@ from tests.constants.search_constants import (
 
 @given("the user is on the registration page")
 def navigate_to_registration_page(context):
+    DriverManager.init_driver()
     driver = DriverManager.get_driver()
 
     main_page = MainPage(driver)

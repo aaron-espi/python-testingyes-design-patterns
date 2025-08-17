@@ -1,4 +1,5 @@
 import threading
+from selenium.webdriver.firefox.service import Service
 from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
 
@@ -12,9 +13,8 @@ class DriverManager:
             not hasattr(DriverManager._thread_local, "driver")
             or DriverManager._thread_local.driver is None
         ):
-            DriverManager._thread_local.driver = webdriver.Firefox(
-                executable_path=GeckoDriverManager().install()
-            )
+            service = Service(GeckoDriverManager().install())
+            DriverManager._thread_local.driver = webdriver.Firefox(service=service)
 
     @staticmethod
     def get_driver():
